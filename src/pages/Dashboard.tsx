@@ -1,5 +1,5 @@
 import { DonutChart } from "@mantine/charts";
-import { Button, Card, Center, Flex, Grid, Input, Text } from "@mantine/core";
+import { Card, Center, Flex, Grid, Text } from "@mantine/core";
 
 export interface FinanceChartData {
     name: string;
@@ -15,9 +15,9 @@ const data: FinanceChartData[] = [
 
 export default function Dashboard() {
     return (
-        <Flex direction={"column"} gap={"md"} p={"sm"}>
+        <Flex direction={"column"} gap={"md"} p={"20"}>
             <h2>ByFinance</h2>
-            <Card radius={"lg"} p={"lg"} mt={"sm"}>
+            <Card radius={"lg"} p={"xl"} mt={"sm"}>
                 <Flex direction={"column"} gap={"5"}>
                     <Text size="sm">
                         Saldo
@@ -77,10 +77,12 @@ export default function Dashboard() {
                     </Card >
                 </Grid.Col>
             </Grid>
-            <h3>Despesas por categoria</h3>
-            <Center>
-                <DonutChart data={data} thickness={25} />
-            </Center>
+            <Flex direction={"column"} gap={30} mt={20}>
+                <h3>Despesas por categoria teste</h3>
+                <Center>
+                    <DonutChart data={data} thickness={25} />
+                </Center>
+            </Flex>
         </Flex >
     )
 }

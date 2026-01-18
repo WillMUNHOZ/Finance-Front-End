@@ -7,6 +7,10 @@ import '@mantine/core/styles.css';
 // ‼️ import charts styles after core package styles
 import '@mantine/charts/styles.css';
 
+import '@mantine/core/styles.css';
+// ‼️ import dates styles after core package styles
+import '@mantine/dates/styles.css';
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />

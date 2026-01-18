@@ -1,11 +1,12 @@
 import { MantineProvider } from "@mantine/core";
-import AppLayout from "./layout/AppLayout";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routers/Router";
 
 export default function App() {
   return (
     <MantineProvider
       defaultColorScheme="dark">
-      <AppLayout />
+      <RouterProvider router={router} />
     </MantineProvider>
   )
 }

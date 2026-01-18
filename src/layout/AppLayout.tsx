@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import AddExpense from "../pages/AddExpense";
 import Dashboard from "../pages/Dashboard";
@@ -5,7 +6,7 @@ import Dashboard from "../pages/Dashboard";
 export default function AppLayout() {
     return (
         <>
-            <AddExpense />
+            <Outlet />
             <Navbar />
         </>
     )

@@ -11,8 +11,6 @@ const selectData = ["Supermercado", "Lazer", "Combustivél", "Farmacia"];
 
 const today = dayjs().format("YYYY/MM/DD")
 
-console.log(today)
-
 
 export default function AddExpense() {
     const [value, setValue] = useState("Receita");
@@ -63,7 +61,6 @@ export default function AddExpense() {
                         variant="unstyled"
                         prefix="R$ "
                         placeholder={"R$ 0,00"}
-                        // defaultValue={0.00}
                         decimalSeparator=","
                         decimalScale={2}
                         fixedDecimalScale

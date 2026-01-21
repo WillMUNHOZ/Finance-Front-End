@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 export default function Navbar() {
     return (
         <Card id="Navbar" pt={20} radius={"xl"}>
-            <Group justify="space-around">
+            <Group justify="space-around" px={20} pb={10}>
                 <NavLink
                     to="/"
                     style={({ isActive }) => ({

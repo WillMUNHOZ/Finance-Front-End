@@ -42,3 +42,18 @@ html {
   z-index: 200;
   overflow: hidden;
 } */
+
+/* ===== DARK MODE GLOBAL ===== */
+[data-mantine-color-scheme='dark'] {
+  /* 🔥 Background principal do app */
+  --mantine-color-body: #0A0F1E;
+
+  /* 📦 Card / Surface */
+  --mantine-color-dark-7: #1E293B;
+  --mantine-color-dark-6: #1E293B;
+}
+
+/* CARDS */
+:root {
+  --mantine-color-paper: #111827;
+}

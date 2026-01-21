@@ -1,5 +1,6 @@
 import { DonutChart } from "@mantine/charts";
 import { Card, Center, Flex, Grid, Text } from "@mantine/core";
+import dayjs from "dayjs";
 
 export interface FinanceChartData {
     name: string;
@@ -13,6 +14,8 @@ const data: FinanceChartData[] = [
     { name: 'Alimentação', value: 600, color: 'green' },
 ];
 
+const today = dayjs().format("DD/MM/YY");
+
 export default function Dashboard() {
     return (
         <Flex direction={"column"} gap={"md"} p={"20"}>
@@ -22,7 +25,7 @@ export default function Dashboard() {
                     <Text size="sm">
                         Saldo
                     </Text>
-                    <Text size="35px" fw={800}>
+                    <Text size="35px" fw={800} color="white">
                         R$ 4650,00
                     </Text>
                 </Flex>
@@ -34,7 +37,7 @@ export default function Dashboard() {
                             <Text size="sm">
                                 Receitas do mês
                             </Text>
-                            <Text size="20px" ta={"center"} fw={700}>
+                            <Text size="20px" ta={"center"} fw={700} color="white">
                                 R$ 4650,00
                             </Text>
                         </Flex>
@@ -46,7 +49,7 @@ export default function Dashboard() {
                             <Text size="sm">
                                 Despesas do mês
                             </Text>
-                            <Text size="20px" fw={700}>
+                            <Text size="20px" fw={700} color="white">
                                 R$ 4650,00
                             </Text>
                         </Flex>
@@ -58,7 +61,7 @@ export default function Dashboard() {
                             <Text size="sm">
                                 Ainda posso gastar
                             </Text>
-                            <Text size="20px" fw={700}>
+                            <Text size="20px" fw={700} color="white">
                                 R$ 4650,00
                             </Text>
                         </Flex>
@@ -70,8 +73,8 @@ export default function Dashboard() {
                             <Text size="sm">
                                 Data
                             </Text>
-                            <Text size="20px" fw={700}>
-                                16/01/26
+                            <Text size="20px" fw={700} color="white">
+                                {today}
                             </Text>
                         </Flex>
                     </Card >
